@@ -1,7 +1,7 @@
 function Home() {
     return(
         <HomeWrapper>
-
+            Meddy
         </HomeWrapper>
     )
 }
