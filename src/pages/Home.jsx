@@ -2,16 +2,17 @@ import React from 'react'
 import HomeBanner from '../components/Home/HomeBanner'
 import Gallery from '../components/Home/Gallery'
 import Logements from '../data/Logements.json'
-import Footer from '../components/Home/Footer'
+import Header from '../components/Layout/Header'
+
 function Home() {
     return (
-        <section>
+        <main>
             <div className="home">
+                <Header />
                 <HomeBanner />
                 <Gallery Logements={Logements} />
-                <Footer />
             </div>
-        </section>
+        </main>
     )
 }
 

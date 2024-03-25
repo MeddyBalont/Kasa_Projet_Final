@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import Logements from '../data/Logements.json'
-import Header from '../'
 
 function Accommodation() {
     const { id } = useParams()
@@ -12,7 +11,6 @@ function Accommodation() {
     ) : (
         <section>
             <div className="logement_page">
-                <Header />
                 <div className="logmenent_container"></div>
             </div>
         </section>
