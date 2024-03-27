@@ -33,4 +33,25 @@
         color: white;
     }
 }
+.carousel_arrows{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.carousel_arrow_right{
+    position: relative;
+    width: 46.68px;
+    height: 79.2px;
+    gap: 0px;
+    opacity: 0px;
+}
 
+.carousel_arrow_left{
+    position: relative;
+    width: 46.68px;
+    height: 79.2px;
+    gap: 0px;
+    opacity: 0px;
+}    
