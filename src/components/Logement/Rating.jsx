@@ -6,7 +6,7 @@ const Rating = ({ rating }) => {
     const stars = [1, 2, 3, 4, 5]
 
     return (
-        <div>
+        <div className="Rating_container">
             {stars.map((star) => (
                 <img
                     key={star}

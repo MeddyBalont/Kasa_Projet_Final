@@ -1,0 +1,43 @@
+.logement_page {
+    @include desktop {
+        @include margin-desktop;
+    }
+    @include tablet {
+        @include margin-tablet;
+    }
+    @include mobile {
+        @include margin-mobile;
+    }
+}
+
+.logement_container {
+    margin-top: 1em;
+}
+
+.logement_container {
+    margin-top: 1em;
+}
+
+.logement_rectangles {
+    margin-top: 20px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    @include desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 15px;
+    }
+   .rectangle {
+        &_content {
+            padding: 15px 15px 0;
+        }
+    }
+}

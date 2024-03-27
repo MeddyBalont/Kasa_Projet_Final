@@ -15,7 +15,7 @@ function Appearance({ title, location, tags, rating, host }) {
                     })}
                 </div>
             </div>
-            <div className="host_ration_container">
+            <div className="host_rating_container">
                 <Rating rating={rating} />
                 <Host name={host.name} imgHost={host.picture} />
             </div>

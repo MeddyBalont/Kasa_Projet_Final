@@ -1,10 +1,12 @@
 import React from 'react'
 import { Navigate, useParams } from 'react-router-dom'
+import Header from '../components/Layout/Header'
 import Logements from '../data/Logements.json'
-import Appearance from '../components/Logement/Apparence'
+import Appearance from '../components/Logement/Appearence'
 import Rectangle from '../components/Layout/Rectangle'
+import Carousel from '../components/Logement/Carousel'
 
-function Accommodation() {
+function Logement() {
     const { id } = useParams()
     const logement = Logements.find((item) => item.id === id)
 
@@ -13,7 +15,12 @@ function Accommodation() {
     ) : (
         <main>
             <div className="logement_page">
+                <Header />
                 <div className="logmenent_container">
+                    <Carousel
+                        pictures={logement.pictures}
+                        title={logement.title}
+                    />
                     <Appearance
                         title={logement.title}
                         location={logement.location}
@@ -22,7 +29,7 @@ function Accommodation() {
                         rating={logement.rating}
                     />
 
-                    <div className="logement_rectangles rectanges">
+                    <div className="logement_rectangles rectangles">
                         <Rectangle
                             title="Description"
                             content={<p>{logement.description}</p>}
@@ -48,4 +55,4 @@ function Accommodation() {
     )
 }
 
-export default Accommodation
+export default Logement
