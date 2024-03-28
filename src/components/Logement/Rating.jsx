@@ -9,6 +9,7 @@ const Rating = ({ rating }) => {
         <div className="Rating_container">
             {stars.map((star) => (
                 <img
+                    className="stars"
                     key={star}
                     src={star <= rating ? etoileRouge : etoileGrise}
                     alt={star <= rating ? 'Étoile rouge' : 'Étoile grise'}

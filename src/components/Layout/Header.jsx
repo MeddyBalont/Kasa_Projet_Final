@@ -12,13 +12,13 @@ function Header() {
             <div className="header_nav">
                 <ul>
                     <li>
-                        <NavLink exact activeClassName="active" to="/">
-                            Acceuil
+                        <NavLink className="active" to="/">
+                            ACCEUIL
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact activeClassName="active" to="/a-propos">
-                            À propos
+                        <NavLink className="active" to="/a-propos">
+                            À PROPOS
                         </NavLink>
                     </li>
                 </ul>

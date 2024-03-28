@@ -10,7 +10,7 @@
     }
 }
 
-.rectangles {
+.Rectangles {
     margin-top: 1.7em;
     width: 100%;
     @include tablet {
@@ -21,7 +21,7 @@
     }
 }
     
-.rectangle {
+.Rectangle {
     display: flex;
     flex-direction: column;
     width: 100%;

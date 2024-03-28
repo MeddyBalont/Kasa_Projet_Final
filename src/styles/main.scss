@@ -4,15 +4,19 @@
 
 @import './layout/header.scss';
 @import './layout/Banner.scss';
-@import './components/Gallery';
-@import './components/Card';
+@import './layout/Apparence';
 @import './layout/footer';
 
 @import './components/Rating';
 @import './pages/logement';
 @import './pages/Home';
-@import './layout/Apparence';
+
+
 @import './components/Host';
 @import './components/Rating';
 @import './components/Carousel';
-@import './components/rectangle'
+@import './components/rectangle';
+@import './components/Tag';
+@import './components//Rating';
+@import './components/Gallery';
+@import './components/Card';

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Vector from '../../images/Vector.png'
 
 function Rectangle({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +17,7 @@ function Rectangle({ title, content }) {
                         isOpen ? 'arrow-container-up' : ''
                     }`}
                 >
-                    <div className="arrow"></div>
+                    <img src={Vector} alt="arrow" className="arrow" />
                 </div>
             </div>
             {isOpen && <div className="Rectangle_content">{content}</div>}

@@ -3,8 +3,17 @@
     border-radius: 15px;
     overflow: hidden;
     width: 100%;
-
+    margin-top: 15px;
     height: 415px; /* Hauteur par défaut */
+    @include desktop {
+        height: 415px;
+    }
+    @include tablet {
+        height: 300px;
+    }
+    @include mobile {
+        height: 255px;
+    }
 }
 
 .carousel img {
@@ -21,6 +30,7 @@
     z-index: 999;
     bottom: 15px;
     left: 50%;
+    color: white;
 }
 
 .picture_counter {
@@ -39,6 +49,10 @@
     padding-top: 150px;
     margin-left: 20px;
     margin-right: 20px;
+    @include mobile {
+        top: 44%;
+        margin-top: -30px;
+    }
 }
 .carousel_arrow_right{
     position: relative;
@@ -46,6 +60,12 @@
     height: 79.2px;
     gap: 0px;
     opacity: 0px;
+    @include mobile {
+        font-size: 30px;
+        width: 8%;
+        height: 25px !important;
+    }
+
 }
 
 .carousel_arrow_left{
@@ -54,4 +74,10 @@
     height: 79.2px;
     gap: 0px;
     opacity: 0px;
+    @include mobile {
+        font-size: 30px;
+        width: 8%;
+         height: 30px !important;
+    }
+
 }    

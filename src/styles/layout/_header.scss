@@ -54,7 +54,7 @@
 
         &_logo {
             img {
-                width: 130px;
+                width: 90px;
             }
         }
     }
@@ -73,7 +73,27 @@
 
         &_logo {
             img {
-                width: 170px;
+                width: 190px;
+            }
+        }
+    }
+
+    @include mobile {
+        &_nav {
+            ul {
+                gap: 0.1rem;
+                font-size: 12px;
+                gap: 9px;
+            }
+
+            &_link {
+                text-transform: capitalize;
+            }
+        }
+
+        &_logo {
+            img {
+                width: 110px;
             }
         }
     }
