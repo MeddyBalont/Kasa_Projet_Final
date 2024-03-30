@@ -11,7 +11,7 @@ function Logement() {
     const logement = Logements.find((item) => item.id === id)
 
     return !logement ? (
-        <Navigate to="/error" />
+        <Navigate to="*" />
     ) : (
         <main>
             <div className="logement_page">

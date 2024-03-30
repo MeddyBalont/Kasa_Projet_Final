@@ -7,10 +7,6 @@
     align-items: center;
     margin-top: 15px;
 
-    .active{
-            text-decoration: underline;
-    }
-
     &_nav {
         ul {
             display: flex;
@@ -82,7 +78,7 @@
         &_nav {
             ul {
                 gap: 0.1rem;
-                font-size: 12px;
+                font-size: 9px;
                 gap: 9px;
             }
 
@@ -98,3 +94,13 @@
         }
     }
 }
+
+.nav_list_item{
+        &_active{
+            position: relative;
+            color: $primary-color;
+            transition: all 0.2s ease-in-out;
+            text-decoration: underline solid $primary-color; 
+            
+        }
+    }
