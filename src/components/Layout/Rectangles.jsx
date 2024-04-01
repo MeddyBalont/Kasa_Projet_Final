@@ -7,7 +7,6 @@ function Rectangles(props) {
             {props.data.map((data, index) => {
                 return (
                     <Rectangle
-                        // Guarantee a unique key for each item in the list
                         key={
                             `${index}` +
                             `${Object.values(data)}`

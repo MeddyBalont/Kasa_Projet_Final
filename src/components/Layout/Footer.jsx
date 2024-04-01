@@ -1,5 +1,5 @@
 import React from 'react'
-import logo_footer from '../../images/logo_footer_kasa.svg' // Chemin vers votre fichier SVG
+import logo_footer from '../../images/logo_footer_kasa.svg'
 
 function Footer() {
     return (

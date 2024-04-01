@@ -10,12 +10,10 @@ class Carousel extends Component {
             pictureIndex: 0,
         }
     }
-
     handleArrowClick = (direction) => {
         const { pictures } = this.props
         const { pictureIndex } = this.state
 
-        //Calculate the new index of the image according to the direction
         let newPictureIndex
         if (direction === 'previous') {
             newPictureIndex =
@@ -25,7 +23,6 @@ class Carousel extends Component {
                 pictureIndex === pictures.length - 1 ? 0 : pictureIndex + 1
         }
 
-        // Updates the state of the component with the new image index
         this.setState({ pictureIndex: newPictureIndex })
     }
 
