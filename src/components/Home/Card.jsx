@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+//Le props définit n'utilisera que l'id le title et la cover pour mes cartes
 function Card(props) {
     const { id, title, cover } = props.logement
     return (

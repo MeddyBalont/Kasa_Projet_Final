@@ -7,7 +7,7 @@ function Rectangle({ title, content }) {
     const toggleCollapse = () => {
         setIsOpen(!isOpen)
     }
-
+    //Bouton des rectangles description et équipements
     return (
         <section className="Rectangle">
             <div className="Rectangle_button" onClick={toggleCollapse}>

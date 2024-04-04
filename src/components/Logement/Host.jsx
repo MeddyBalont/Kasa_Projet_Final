@@ -1,5 +1,6 @@
 import React from 'react'
 
+//Le nom et la photo de l'host
 function Host({ name, imgHost }) {
     return (
         <section className="host_container">

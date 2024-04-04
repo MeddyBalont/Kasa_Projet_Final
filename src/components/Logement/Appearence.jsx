@@ -3,6 +3,7 @@ import Tag from './Tag'
 import Host from './Host'
 import Rating from './Rating'
 
+//partie en-dessus du caroussel contenant le title, location, tags, rating et host
 function Appearance({ title, location, tags, rating, host }) {
     return (
         <section className="appaearance_container">

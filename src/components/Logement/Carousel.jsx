@@ -3,6 +3,8 @@ import PictureCounter from './PicturePost'
 import arrowLeftImage from '../../images/flèche_gauche.svg'
 import arrowRightImage from '../../images/flèche_droite.svg'
 
+//Le constructeur dans la classe Carousel initialise l'état(state) de l'instance de la classe lorsqu'elle est créée
+//Le constructeur initialise l'état avec un objet contenant une seule propriété pictureIndex avec une valeur de 0
 class Carousel extends Component {
     constructor(props) {
         super(props)

@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 import Logo from '../../images/Logo.svg'
 
 function Header() {
+    //Chemin de l'URL actuelle de la page
+    //Détermine si un élément de navigation doit être actif ou non
     const currentRoute = window.location.pathname
     return (
         <header className="header">

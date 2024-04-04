@@ -1,6 +1,6 @@
 import React from 'react'
 import Rectangle from './Rectangle'
-
+//Function map pour aller chercher les description et équipements selon la key
 function Rectangles(props) {
     return (
         <div className="Rectangles">

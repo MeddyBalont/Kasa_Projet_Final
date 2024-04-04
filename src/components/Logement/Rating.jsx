@@ -4,7 +4,7 @@ import etoileRouge from '../../images/etoile_rouge.svg'
 
 const Rating = ({ rating }) => {
     const stars = [1, 2, 3, 4, 5]
-
+    //Selon le fichier json affiche un nombre d'étoile rouge sur cinq
     return (
         <div className="Rating_container">
             {stars.map((star) => (
