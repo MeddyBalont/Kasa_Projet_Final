@@ -1,106 +1,25 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: 40px 100px 49px 100px;
+  }
+
+  &__fig {
     display: flex;
-    font-weight: 400;
-    color: $primary-color;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+    align-items: flex-start;
+    margin: 0;
+    width: 9rem;
 
-    &_nav {
-        ul {
-            display: flex;
-            flex-direction: row;
-            gap: 0.7rem;
-        }
-        &_link {
-            font-size: 0.7em;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition: transform 150ms ease-in-out;
-
-            &:hover {
-                transform: scale(1.05);
-            }
-
-            &:first-of-type {
-                margin-right: 35px;
-            }
-
-        }
+    @media screen and (min-width: $breakpoint-desktop) {
+      width: 13.2rem;
     }
 
-    &_logo {
-        img {
-            width: 140px;
-        }
+    img {
+      width: 100%;
     }
-
-    @include tablet {
-        &_nav {
-            ul {
-                gap: 2rem;
-            }
-
-            &_link {
-                font-size: 1.1em;
-                text-transform: capitalize;
-            }
-        }
-
-        &_logo {
-            img {
-                width: 90px;
-            }
-        }
-    }
-
-    @include desktop {
-        &_nav {
-            ul {
-                gap: 4rem;
-            }
-
-            &_link {
-                font-size: 1.3em;
-                text-transform: capitalize;
-            }
-        }
-
-        &_logo {
-            img {
-                width: 190px;
-            }
-        }
-    }
-
-    @include mobile {
-        &_nav {
-            ul {
-                gap: 0.1rem;
-                font-size: 9px;
-                gap: 9px;
-            }
-
-            &_link {
-                text-transform: capitalize;
-            }
-        }
-
-        &_logo {
-            img {
-                width: 110px;
-            }
-        }
-    }
+  }
 }
-
-.nav_list_item{
-        &_active{
-            position: relative;
-            color: $primary-color;
-            transition: all 0.2s ease-in-out;
-            text-decoration: underline solid $primary-color; 
-            
-        }
-    }
